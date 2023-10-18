@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #171100;
+    --secondary-color: #ffb900;
+}
+html,
+body {
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/* Common */
+.content {
+    width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 999px;
+    background: #171100;
+}
+
+.btn:hover {
+    opacity: 90%;
+}
+
+/* Private */
+.header {
+    padding: 36px 0;
+    background: #fffcf4;
+}
+.header .row {
+    display: flex;
+    align-items: center;
+}
+
+.header .row ul {
+    margin-left: 512px;
+    display: flex;
+}
+
+.header .row li {
+    padding-left: 42px;
+    color: #5f5b53;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75; /* 175% */
+}
+.header .row li:hover {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.header .row li:first-of-type {
+    color: var(--primary-color);
+    font-weight: 600;
+    position: relative;
+    padding-left: 0px;
+}
+.header .row li:after {
+    display: inline-block;
+    position: absolute;
+    content: "";
+    width: 12px;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+}
+
+.header .btn {
+    margin-left: 70px;
+    background: var(--primary-color);
+    padding: 11px 41px;
+    white-space: nowrap;
+}
+
+.header .btn .btn-action {
+    min-width: 144px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
