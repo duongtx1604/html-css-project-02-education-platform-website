@@ -5,6 +5,7 @@
 :root {
     --primary-color: #171100;
     --secondary-color: #ffb900;
+    --heading-font: "Sen", sans-serif;
 }
 html,
 body {
@@ -69,7 +70,6 @@ a {
 }
 .header .row li:hover {
     color: var(--primary-color);
-    font-weight: 600;
 }
 
 .header .row li:first-of-type {
@@ -103,4 +103,151 @@ a {
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.75; /* 175% */
+}
+
+.hero {
+    background: #fffcf4;
+    padding: 36px 0 65px;
+}
+
+.hero .row {
+    display: flex;
+}
+.hero .media-block {
+    position: relative;
+    width: 49%;
+}
+.hero .image {
+    max-width: 470px;
+    height: 685px;
+    border-radius: 20px;
+    display: block;
+    object-fit: cover;
+}
+.hero .hero-summary {
+    width: 270px;
+    position: absolute;
+    bottom: 48px;
+    left: 300px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+    padding: 24px;
+}
+.hero .hero-summary .sum-block {
+    display: flex;
+    align-items: center;
+    padding-top: 22px;
+}
+.hero .hero-summary .sum-block:first-child {
+    padding-top: 0;
+}
+
+.hero .hero-summary .sum-image {
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    background-color: #fff9e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.hero-summary .sum-block:nth-child(2) .sum-image {
+    background-color: #fcefff;
+}
+.hero-summary .sum-block:nth-child(3) .sum-image {
+    background-color: #ebeaff;
+}
+
+.hero .hero-summary .sum-text {
+    margin-left: 16px;
+}
+.hero .hero-summary .sum-text p:first-child {
+    color: #5f5b53;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+}
+
+.hero .hero-summary .sum-text p:last-child {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.66;
+}
+
+.hero .info {
+    width: 51%;
+    padding: 64px 0 0 130px;
+}
+.hero .info .title {
+    color: var(--primary-color);
+    font-family: var(--heading-font);
+    font-size: 5.8rem;
+    font-weight: 700;
+    line-height: 1.17; /* 117.241% */
+    letter-spacing: -0.02em;
+    min-width: 470px;
+}
+
+.hero .info .desc {
+    color: #5f5b53;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.66; /* 166.667% */
+    margin-top: 22px;
+}
+.hero .info .actions {
+    margin: 38px 0 48px;
+    display: flex;
+    align-items: center;
+}
+.hero .info .btn-course {
+    color: #fff;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    background: #ffb900;
+    min-width: 180px;
+    line-height: 64px;
+}
+
+.hero .info .btn-watch {
+    color: #171100;
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+}
+
+.hero .btn-watch .icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.07);
+}
+.hero .btn-watch > span {
+    margin-left: 14px;
+}
+.hero .number {
+    display: flex;
+    align-items: baseline;
+}
+.hero .number p {
+    margin-left: 14px;
+}
+.hero .number p:nth-child(odd) {
+    color: #171100;
+    font-family: Sen;
+    font-size: 4.4rem;
+    font-weight: 700;
+    margin-left: 28px;
+}
+.hero .number p:first-child {
+    margin-left: 0;
 }
