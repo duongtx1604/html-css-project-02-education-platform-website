@@ -683,3 +683,83 @@ a {
 .blog .dots .active {
     background: var(--secondary-color);
 }
+
+/* Footer */
+
+footer {
+    background: #2e2100;
+    padding-top: 96px;
+}
+
+footer .body {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #59554b;
+}
+
+footer .lesson {
+    width: 267px;
+}
+footer .lesson .logo {
+    display: flex;
+    align-items: center;
+}
+
+footer .lesson .logo p {
+    color: #fff;
+    font-family: var(--heading-font);
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.41; /* 141.667% */
+}
+
+footer .lesson .logo .dot {
+    position: relative;
+    bottom: -6px;
+    width: 4px;
+    height: 4px;
+    background: var(--secondary-color);
+    border-radius: 999px;
+}
+
+footer .lesson .desc {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    margin: 18px 0;
+    color: #bfbcb2;
+}
+footer .row {
+    padding-bottom: 38px;
+}
+
+footer .row h3 {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
+
+footer .row .line {
+    width: 130px;
+    height: 1px;
+    background: #59554b;
+    margin: 14px 0 28px;
+}
+
+footer .row p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    color: #bfbcb2;
+    margin-top: 12px;
+}
+
+footer .copyright {
+    padding: 28px 0;
+    text-align: center;
+    color: #807d74;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85; /* 185.714% */
+}
