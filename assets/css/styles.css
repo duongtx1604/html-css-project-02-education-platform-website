@@ -566,3 +566,120 @@ a {
     object-fit: cover;
     border-radius: 20px;
 }
+
+/* Blog */
+
+.blog {
+    padding: 96px 0;
+    background: #fffcf4;
+}
+.blog .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog .info .sub-title {
+    color: #130606;
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 3.8rem;
+    font-weight: 700;
+    line-height: 1.26; /* 126.316% */
+    letter-spacing: -0.76px;
+}
+
+.blog .info .desc {
+    text-align: center;
+    padding: 16px 0 55px;
+    width: 448px;
+}
+.blog .cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.blog .card {
+    border-radius: 16px;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+.blog .card:hover {
+    box-shadow: 0px 18px 36px 0px rgba(0, 0, 0, 0.05);
+    border: 1px solid #fff;
+}
+
+.blog .card .image img {
+    width: 370px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 16px 16px 0px 0px;
+}
+
+.blog .middle {
+    padding: 20px 20px 28px;
+}
+.blog .date {
+    display: flex;
+    align-items: center;
+}
+
+.blog .date .dot {
+    width: 6px;
+    height: 6px;
+    background: var(--secondary-color);
+    border-radius: 999px;
+}
+
+.blog .date p {
+    font-size: 1.4rem;
+    padding-left: 6px;
+}
+
+.blog .line {
+    width: 160px;
+    height: 1px;
+    border-radius: 999px;
+    background: #e2dfda;
+    margin: 12px 0;
+}
+
+.blog .action p {
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75; /* 175% */
+}
+
+.blog .action .read-btn {
+    margin-top: 12px;
+    padding: 12px 21px;
+    border-radius: 999px;
+
+    border: none;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 26px; /* 185.714% */
+}
+.blog .action .read-btn:hover {
+    background: #ffb900;
+}
+
+.blog .dots {
+    display: flex;
+    margin-top: 38px;
+    justify-content: center;
+}
+
+.blog .dots .dot {
+    width: 6px;
+    height: 6px;
+    background: #5f5b53;
+    border-radius: 999px;
+    margin-left: 6px;
+}
+.blog .dots .active {
+    background: var(--secondary-color);
+}
