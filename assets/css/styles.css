@@ -57,12 +57,16 @@ a {
 
 /* Header */
 .header {
-    padding: 36px 0;
     background: #fffcf4;
+    top: -28px;
+    display: block;
+    position: sticky;
+    z-index: 1;
 }
 .header .row {
     display: flex;
     align-items: center;
+    padding: 36px 0 8px;
 }
 
 .header .row ul {
@@ -88,7 +92,7 @@ a {
     position: relative;
     padding-left: 0px;
 }
-.header .row li:after {
+.header .row li:first-child::after {
     display: inline-block;
     position: absolute;
     content: "";
@@ -119,7 +123,8 @@ a {
 
 .hero {
     background: #fffcf4;
-    padding: 36px 0 65px;
+    padding: 50px 0 65px;
+    position: relative;
 }
 
 .hero .row {
@@ -684,28 +689,28 @@ a {
     background: var(--secondary-color);
 }
 
-/* Footer */
+/* .footer */
 
-footer {
+.footer {
     background: #2e2100;
     padding-top: 96px;
 }
 
-footer .body {
+.footer .body {
     display: flex;
     border-bottom: 1px solid #59554b;
 }
 
-footer .lesson {
+.footer .lesson {
     width: 267px;
     margin-right: auto;
 }
-footer .lesson .logo {
+.footer .lesson .logo {
     display: flex;
     align-items: center;
 }
 
-footer .lesson .logo p {
+.footer .lesson .logo p {
     color: #fff;
     font-family: var(--heading-font);
     font-size: 2.4rem;
@@ -713,7 +718,7 @@ footer .lesson .logo p {
     line-height: 1.41; /* 141.667% */
 }
 
-footer .lesson .logo .dot {
+.footer .lesson .logo .dot {
     position: relative;
     bottom: -6px;
     width: 4px;
@@ -722,19 +727,19 @@ footer .lesson .logo .dot {
     border-radius: 999px;
 }
 
-footer .lesson .desc {
+.footer .lesson .desc {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.85;
     margin: 18px 0;
     color: #bfbcb2;
 }
-footer .row {
+.footer .row {
     padding-bottom: 38px;
     width: 21.6%;
 }
 
-footer .row h3 {
+.footer .row h3 {
     display: inline-block;
     /* min-width: 130px; */
     border-bottom: 1px solid #59554b;
@@ -744,15 +749,15 @@ footer .row h3 {
     line-height: 1.75; /* 175% */
     padding-bottom: 14px;
 }
-footer .row ul li {
+.footer .row ul li {
     margin: 12px 0;
 }
 
-footer .row ul li:first-child {
+.footer .row ul li:first-child {
     margin-top: 28px;
 }
 
-footer .row ul li a {
+.footer .row ul li a {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.85;
@@ -760,14 +765,14 @@ footer .row ul li a {
     margin-top: 12px;
 }
 
-footer strong {
+.footer strong {
     color: #fff;
     font-size: 1.4rem;
     font-weight: 600;
     line-height: 1.85; /* 185.714% */
 }
 
-footer .copyright {
+.footer .copyright {
     padding: 28px 0;
     text-align: center;
     color: #807d74;
