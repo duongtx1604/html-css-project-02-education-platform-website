@@ -693,12 +693,12 @@ footer {
 
 footer .body {
     display: flex;
-    justify-content: space-between;
     border-bottom: 1px solid #59554b;
 }
 
 footer .lesson {
     width: 267px;
+    margin-right: auto;
 }
 footer .lesson .logo {
     display: flex;
@@ -731,28 +731,40 @@ footer .lesson .desc {
 }
 footer .row {
     padding-bottom: 38px;
+    width: 21.6%;
 }
 
 footer .row h3 {
+    display: inline-block;
+    /* min-width: 130px; */
+    border-bottom: 1px solid #59554b;
     color: #fff;
     font-size: 1.6rem;
     font-weight: 600;
     line-height: 1.75; /* 175% */
+    padding-bottom: 14px;
+}
+footer .row ul li {
+    margin: 12px 0;
 }
 
-footer .row .line {
-    width: 130px;
-    height: 1px;
-    background: #59554b;
-    margin: 14px 0 28px;
+footer .row ul li:first-child {
+    margin-top: 28px;
 }
 
-footer .row p {
+footer .row ul li a {
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.85;
     color: #bfbcb2;
     margin-top: 12px;
+}
+
+footer strong {
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.85; /* 185.714% */
 }
 
 footer .copyright {
